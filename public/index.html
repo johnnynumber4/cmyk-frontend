@@ -76,7 +76,7 @@
 						</footer>
 					</article>
 				</div>
-				<a href="#two" class="more">Learn More</a>
+				<!-- <a href="#two" class="more">Learn More</a> -->
 			</section>
 
 		<!-- Two -->
@@ -102,6 +102,7 @@
 								Rochester Running Company will serve as a drop off location during regular business hours:
 								1387 Mt Hope Ave, Rochester, NY 14620
 							</p>
+
 						</div>
 						<footer>
 							<!-- <a href="generic.html" class="button alt">Learn More</a> -->
@@ -190,12 +191,50 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+		<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDLw0raqW-dek3jh4Wo0fKQkuDsfR-515c",
+			authDomain: "instantmessagetest-148722.firebaseapp.com",
+			databaseURL: "https://instantmessagetest-148722.firebaseio.com",
+			projectId: "instantmessagetest-148722",
+			storageBucket: "instantmessagetest-148722.appspot.com",
+			messagingSenderId: "209949455092",
+			appId: "1:209949455092:web:53d955cfb7b1a59fcea4a1",
+			measurementId: "G-1H5XFWJYXE"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		let db = firebase.firestore();
+			// db.settings({
+			// ssl: false
+			// });
+		firebase.analytics();
+		</script>
+		<!-- <script>
+			const firebase = require("firebase");
+			// Required for side-effects
+			require("firebase/firestore");
+			
+			// Initialize Cloud Firestore through Firebase
+			var db = firebase.firestore();
+		</script> -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/app.js"></script>
+
 
 	</body>
 </html>
