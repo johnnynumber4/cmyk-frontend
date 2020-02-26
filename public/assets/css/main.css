@@ -2493,6 +2493,7 @@
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		font-size: x-large;
 	}
 
 		.icon:before {
