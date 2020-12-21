@@ -31,7 +31,7 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="applications.html">.</a></li>
+					<li><a href="applications.html">Blog</a></li>
 					<!-- <li><a href="generic.html">Who We Are</a></li> -->
 					<!-- <li><a href="elements.html">Elements</a></li> -->
 					
@@ -63,26 +63,21 @@
 				<div class="inner">
 					<article class="box">
 						<header>
-							<h2>We are CMYK.</h2>
-							<h3>We are the future of multisport giving back</h3>
-							<p>10.23.19</p>
+							<h2>YOU are CMYK.</h2>
+							<h3>We are the future of multisport giving back and we need your help to do it!</h3>
 						</header>
 						<div class="content">
-							<p>We are in a class of our own.  Maybe we are age groupers, weekend warriors, first timers, millionth timers...we crave doing what it takes to go to our next level.  We are CMYK.   </p>
-							<p>
-								Often it crosses our mind that we are lucky to have the opportunity to achieve our goals, but not everyone has the resources to do what we can do.  CMYK athletes will continue to push their limits while simultaneously reaching out to the community to help those in need. </p>
-							<p>
-								Follow us as we start our journey.  Join us to enhance yours.
-							</p>
+							<form action="assets/js/app.js" method="post" id="form">
+								<input type="text" id="name-input" placeholder="Your name..." required autofocus />
+								<input type="text" id="email-input" placeholder="Your email..." />
+								<input type="text" id="cause-input" placeholder="Your cause..." />
+								<button type="submit">OK</button>
+							</form>
+							<br /> Hello, <span id="name">guest</span>!
 						</div>
-						<footer>
-									<!-- One <a href="generic.html" class="button alt">Learn More</a> -->
-						</footer>
 					</article>
 				</div>
-				<!-- <a href="#two" class="more">Learn More</a> -->
 			</section>
-
 		<!-- Two -->
 			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
 				<div class="inner">
@@ -108,88 +103,17 @@
 							</p>
 
 						</div>
-						<footer>
-							<!-- <a href="generic.html" class="button alt">Learn More</a> -->
-						</footer>
-					</article>
-				</div>
-				<!-- <a href="#three" class="more">Learn More</a> -->
-			</section>
-
-
-		<!-- Three
-			<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Varius a cursus aliquet</h2>
-							<p>11.11.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-				<a href="#four" class="more">Learn More</a>
-			</section>
-			-->
-
-		<!-- Four
-			<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Luctus blandit mi lectus in nascetur</h2>
-							<p>10.30.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
 					</article>
 				</div>
 			</section>
-			-->
-
-		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-
-					<!-- <h2>Contact Us</h2> -->
-
-					<!-- <form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name" color="white">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
-						</ul>
-					</form> -->
-
 					<div class="copyright">
 						&copy; CMYK: Craving Multisport, Yielding Kindness. Images: <a href="https://unsplash.com">Unsplash</a>.
 					</div>
-
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
 

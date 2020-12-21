@@ -14,6 +14,10 @@
 		vertical-align: baseline;
 	}
 
+	input {
+		margin: 20px auto !important;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
