@@ -18,9 +18,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
 
+		<link rel="stylesheet" 
+			href= 
+			"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity= 
+			"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous">     
+					
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+          
+	</head> 
+	<body> 
 		<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html">CMYK</a></div>
@@ -31,7 +40,7 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="applications.html">Blog</a></li>
+					<!-- <li><a href="applications.html">Blog</a></li> -->
 					<!-- <li><a href="generic.html">Who We Are</a></li> -->
 					<!-- <li><a href="elements.html">Elements</a></li> -->
 					
@@ -66,43 +75,39 @@
 							<h2>YOU are CMYK.</h2>
 							<h3>We are the future of multisport giving back and we need your help to do it!</h3>
 						</header>
-						<div class="content">
+							<div class="col-md-6 main"> 
+									
+								<form action="/sign_up" method="post"> 
+										
+								<h1> Signup form </h1> 
+												
+								<input class="box" type="text" name="name" id="name" 
+								placeholder="Name"  required /><br> 
+												
+								<input class="box" type="email" name="email" id="email" 
+								placeholder="E-Mail " required /><br> 
+												
+								<input class="box" type="password" name="password" 
+								id="password" placeholder="Password " required/><br> 
+												
+								<input class="box" type="text" name="phone" id="phone"  
+								placeholder="Phone Number " required/><br> 
+											<br> 
+								<input type="submit" id="submitDetails"  
+								name="submitDetails" value="Submit" /><br> 
+										
+								</form> 		
+							</div> 
+						<!-- <div class="content">
 							<form action="assets/js/app.js" method="post" id="form">
 								<input type="text" id="name-input" placeholder="Your name..." required autofocus />
 								<input type="text" id="email-input" placeholder="Your email..." />
-								<input type="text" id="cause-input" placeholder="Your cause..." />
+								<input type="text" id="website-input" placeholder="Your email..." />
+								<textarea name="Text1" cols="40" rows="5" id="cause-input" placeholder="Your cause..." style="resize: none;"></textarea>
 								<button type="submit">OK</button>
 							</form>
 							<br /> Hello, <span id="name">guest</span>!
-						</div>
-					</article>
-				</div>
-			</section>
-		<!-- Two -->
-			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>CMYK Inaugural Campaign to benefit Open Door Mission Rochester!</h2>
-							<p>02.10.20</p>
-						</header>
-						<div class="content">
-							<p>CMYK is kicking off our mission with an inaugural 4 week campaign to benefit the Open Door Mission - Rochester!
-							<p>Open Door Mission is looking for food/maintenance/hygiene/clothing in efforts to restore hope and lives of impoverished men, women, and children of Rochester.</p>
-							<p>In true "Craving Multisport, Yielding Kindness" fashion, a small group of CMYK athletes is taking on a "4-4-48 Challenge" near the end of the campaign. This challenge involves running 4 miles, every 4 hours, for a total of 48 hours. We will be running around the Rochester area, including the Freezeroo White House Challenge! The multisport community is privileged with the opportunity to swim/bike/run in any temperature hot or cold, but some in our own backyard must brave the elements without any choice...we aim to try and change that.</p>
-							<p>Open Door Mission Drop Off Information
-							156 N. Plymouth Ave Rochester NY 14608
-							Drop off any time from 9 am to 5 pm Monday through Friday</p>
-
-							<p>
-								GRTC Freezeroo Drop Off Location:
-								02/22/2020 - 1100 Lake Rd, Webster, NY 14580
-
-								Rochester Running Company will serve as a drop off location during regular business hours:
-								1387 Mt Hope Ave, Rochester, NY 14620
-							</p>
-
-						</div>
+						</div> -->
 					</article>
 				</div>
 			</section>
@@ -135,20 +140,8 @@
 		};
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
-		let db = firebase.firestore();
-			// db.settings({
-			// ssl: false
-			// });
 		firebase.analytics();
 		</script>
-		<!-- <script>
-			const firebase = require("firebase");
-			// Required for side-effects
-			require("firebase/firestore");
-			
-			// Initialize Cloud Firestore through Firebase
-			var db = firebase.firestore();
-		</script> -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -156,7 +149,6 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/app.js"></script>
-
-
+		<script src="assets/js/db.js"></script>
 	</body>
 </html>

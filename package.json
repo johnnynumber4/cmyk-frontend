@@ -4,21 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node public/assets/js/db.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnnynumber4/cmyk.git"
   },
-  "author": "",
+  "author": "Johnny Young IV",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnnynumber4/cmyk/issues"
   },
   "homepage": "https://github.com/johnnynumber4/cmyk#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "eslint": "^6.8.0",
-    "lint": "^0.7.0"
+    "express": "^4.17.1",
+    "lint": "^0.7.0",
+    "mongoose": "^5.11.18"
   },
   "devDependencies": {}
 }
